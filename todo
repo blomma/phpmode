@@ -1,0 +1,18 @@
+o (fix) The behavior of PHP_Colon_Offset and PHP_Switch_Offset, they
+  work funny together.
+      
+o (feature) Somehow add the functionality of html mode to php.sl.
+     
+o (feature) Add c comment/uncomment region functions.
+  (Update): Can't think of a good reason to do this, personally
+  I'm not to keen on the way php allows multiple way to comment
+  things, so since i love c++ comments more than i love c comments
+  that's what comment_region will do.
+
+o (nonissue) Code that are inside " ' won't get parsed right, and that's because
+  the indent routine sees it as inside a string and treat's it accordingly.
+  If you're using ' " outside the phpblock, like in HTML code, then use the
+  appropriate HTML encoding for those particular characters, actually i recommend
+  you use those always according to HTML standards.
+  Or even better, don't mix phpcode and html code, instead use a sane template
+  module for php, there are lots of them.

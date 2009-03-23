@@ -1,0 +1,341 @@
+v0.1 2000-05-07
+---------------
+o Initial release
+
+v0.2 2000-05-08
+---------------
+o Fixed so it comments a line correctly with // something.
+o Fixed the comment_region and uncomment_region so they also work
+  correctly and output c++ style comments //.
+o Cleaned up the code, removed code that were not needed.
+o Fixed the newline_and_indent functions so it worked as i wanted it to work.
+o Fixed the top_of_function, it now recognizes both a { on a line by itself, or
+  something like this function blaah ($dooh) {.
+o Fixed the bug(sort of) that resulted in wrong indent if you had something like this
+  // something http://
+  the extra pair of slashes made it indent under them
+
+v0.3 2000-05-08
+---------------
+o Fixed a bug in define key for php_comment_line, it pointed to a obsolete function.
+o Fixed so php_mark_function now correctly works whet-ever the { is on a line
+  by itself or if is it on the same line as the function start.
+o Fixed the bug where indenting would misbehave after you had a
+  some text and then a <?.
+o Rewrote some of the html indenting code and misc code cleanup.
+
+v0.3.1 2000-05-08
+-----------------
+o Back-ported my // fix out of the code, it didn't work as it should.
+
+v0.3.1.1 2000-05-09
+-------------------
+o Removed the debugging messages from the script.
+
+v0.4 2000-05-20
+---------------
+o Added folding info to the file.
+o Updated the docs for the functions/key-bindings.
+o Rewrote all define_keywords_n to not use strncat.
+o Added a menu to the menu-bar with some of the functions.
+o Updated the keyword list, it now contains all php3 and php4 keywords.
+o Updated the syntax table with the operators for php
+o Added better install instructions.
+
+v0.5 2000-05-30
+---------------
+o Rewrote php_in_block, it now looks past commented out <?.
+o Added misc key-bindings.
+o Fixed indent region, now it doesn't matter if you start a region
+  from bottom-to-up or vice-verse, it gets it right.
+o Fix #4 for having multiple // on a line and that screwing up indenting.
+o Removed some debugging messages.
+o Removed some old code.
+o Simplified the indent_buffer function.
+o Rewrote the php_top_of_function, now it truly goes to the top of the
+  function, and also sees if it is out of bounds or not in a function at all.
+o Fixed php_mark_function, now it marks the entire function regardless of
+  the existence of multiple braces inside the function.
+o Simplified the php_is_comment_example function and renamed it to php_is_comment.
+o Moved the to-do list into the top header of the file, easier to maintain.
+o Added missing keyword class, global and globals.
+o Added function php_insert_class.
+o Added function php_insert_function.
+o Swapped the keyword colors to be more in line with cmode and other
+  modes, thanks David.
+o Changed the syntax flag to be case insensitive and removed the extra ALL CASE
+  keywords, thanks to David for the tips
+o Fixed when you have a construct like 
+  if (blaah)
+    die
+  it wrongly indents it under the if
+  should work now.
+o Some fixes in general in indenting.
+o PHP_CONTINUED_OFFSET is now back.
+o Added back the long keywords for v0.99.11
+
+v0.6 2000-08-25
+---------------
+o # is now recognized as a comment.
+o Added variable PHP_Autoinsert_Comments = 1, which set whet-ever
+  a comment should automatically follow a comment when you
+  do a newline.
+  Ported it over from cmode.
+o Updated the thanks list.
+o Fixed so now PHP_BRACE now is recognized outside braces.
+o Some cleanup in the engine.
+o Added variable PHP_Class_Offset, which set amount
+  of indenting inside a class, ported it over from cmode.
+  Make a note, this only affects the amount of indenting inside
+  the class, the braces aligns according to PHP_BRACE still.
+o Fixed the indenting problem when you have text outside the 
+  php block, thanks to Abraham vd Merwe for
+  pointing that out.
+o Removed the key-binding to php_format_paragraph, i couldn't make it work
+  good, so ill try and code a new one, until then this is removed.
+
+v0.7 2000-10-05
+---------------
+o Updated the docs on how to install and made sure they worked.
+o Verified that all the the user variables works as expected.
+o Added missing keywords and functions:
+   array_rand
+   imagegammacorrect
+   swf_definepoly
+   swf_ortho
+   array_merge_recursive
+   pg_trace
+   pg_untrace
+   set_error_handler
+   create_function
+   pg_loimport
+   pg_loexport
+   fflush
+   str_pad
+   imagewbmp
+   imagecreatefromxbm
+   array_unique
+   array_intersect
+   array_diff
+   restore_error_handler
+   spliti
+   ImageCreateFromWBMP
+   ImageColorClosestHWB
+   ImageCopyMerge
+   ImagePaletteCopy
+   ImageTypes
+   wordwrap
+   ldap_compare
+   strncasecmp
+   ob_get_length
+   php_uname
+      
+o Added all functions to the menu
+o Added back a provisional format_paragraph, but
+  it is ripped right out of c_mode and i don't honestly know
+  what to do with it, any suggestions about what format_paragraph
+  should do for phpmode is more than welcome.
+o Fixed the wrong indenting within braces.
+o Spell-checked my docs *DOOOH*
+o Removed some debugging lines.
+      
+v0.8 2000-10-11
+---------------
+o Fixed some folding information.
+o Added my new email address.
+o Added missing definekey for php_format_paragraph
+o Changed all "PHP" to use $1 instead
+o Restructured the order of key-bindings and menu order, mostly cosmetic.
+o Added php_blink_matching, if you put the cursor on a brace it marks
+  the region between that and the matching one, nice visual, only 
+  to find out about goto_match, try Ctrl-\, oh well i coded it and 
+  now it stays :)
+o Fixed/Changed the behavior of php_top_of_function, now it correctly reports
+  that you're not in a function if you're missing a top brace.
+o Changed the error message if php_top_of_function can't find the top brace of
+  the function to say that it can't find the top brace of the function.
+o Added a function to insert a literal TAB, default bound to Ctrl-C Ctrl-I
+  Now, don't ask what it is for if you don't know.
+o Changed the behavior of indenting outside a phpblock (i.e. <? ?>), now It
+  just insert a TAB character, nothing fancy at all.
+o Changed the heuristic of finding if you're inside a phpblock.
+o Updated the 'things that are a non-issue' list
+o Replaced the current php_indent_buffer code with the one from krconv.sl,
+  actually i would have preferred to just autoload() it, but since this mode
+  isn't a part of the standard shipment with jed i can't rely on the fact that
+  krconv.sl will exists for someone, so i duplicate its functionality here for
+  the present being and if this mode gets included into the mainstream package
+  i suggest this gets remedied.
+o Improved the heuristic on php_top_of_function, it now correctly doesn't find
+  functions that are in a comment, since its valid syntax in php to break up the
+  function line on many lines, I've dumbed down the heuristic of finding the top
+  of the function, it now only looks for the word function and checks if it is not
+  in a comment, this should be OK.
+
+v0.9 2000-11-01
+---------------
+o Added new functions as of the php-4.0.3 release.
+   EscapeShellArg
+   is_uploaded_file
+   move_uploaded_file
+   pathinfo
+   pg_put_line
+   pg_end_copy
+   ftp_exec
+   session_cache_limiter
+   curl_error
+   curl_errno
+   mysql_escape_string
+o Added missing folding information
+o Updated DFA highlighting, seems to work fine.
+o Went over the docs for accuracy.
+o Reworked the php_indent_buffer, should work better now
+o Once again redid the php_top_of_function, it now has a more strict
+  syntax check for finding a function top, at the moment it cannot
+  find a function that is broken up on multiple lines.
+
+v1.0 2000-11-04
+---------------
+o Added html style commenting to be recognized as a comment, only works in DFA.
+o Fixed mark_function, now it no longer marks extra lines above and under
+  the actual function, something that could make subsequent comment_region
+  comment some extra lines out.
+o Fixed some problem with # style comments, it should now works as //
+o Added ASP style tags, ex. '<% %>',to be recognized as php delimiters.
+o Fixed the regexp in DFA so one-liners like '<% echo ("As of PHP 3.0.4 you may optionally use ASP-style tags"); %>'
+  now looks nicer.
+o Updated the docs, added a section on DFA syntax.
+o Added missing constants.
+   __FILE__
+   __LINE__
+o Added missing functions.
+   include_once
+   require_once
+o Fixed the folding, it now uses //{{{  and ///}}} as start and end
+  fold markers.
+
+v1.1 2000-12-04
+---------------
+o Fixed the comment/uncomment region code, it no longer moves the commented region to the 
+  beginning of the line, it now also doesn't comments out a extra line at the end of the marked
+  region.
+   
+v1.2 2001-01-13
+---------------
+o Added new functions as of php-4.0.4.
+   is_null
+   get_defined_functions
+   get_defined_vars
+   call_user_func_array
+   constant
+   ImageCreateFromString
+   array_sum
+   curl_getinfo
+o These functions got renamed in the php-4.0.4 release.
+   shm_attach     => shmop_attach
+   shm_detach     => shmop_detach
+   shm_get_var    => shmop_get_var
+   shm_put_var    => shmop_put_var
+   shm_remove     => shmop_remove
+   shm_remove_var => shmop_remove_var
+o Removed an extra php_paragraph_sep function that had somehow crept in.
+o Ported C_Switch_Offset over from cmode to this mode and renamed it to
+  PHP_Switch_Offset, it controls the offset of code inside a switch
+  statement.
+o Made php_mark_matching more generic, now it matches whatever you're standing on.
+o Added back DFA syntax caching to on by default.
+o Added separators to the menu to increase readability.
+
+v1.3 2001-02-08
+---------------
+o Added a README file.
+o Updated the DFA syntax.
+o Fixed the keywords syntax highlight.
+o Added a new Variable to customize the insertion of a }.
+  PHP_KET_NEWLINE
+  When set to 1 it inserts a newline before inserting a }.
+  This new behavior somewhat breaks the old behavior with only
+  PHP_BRA_NEWLINE, but IMHO it was already broken.
+  But in case you want this behavior back, please tell me so
+  and i will put in a Comp. hack for that in the next release.
+o Fixed so comment_line now puts the comment at the beginning of the line.
+o Replaced comment_region with a better one, mostly taken from comment.sl
+  it also changes the behavior so comments are inserted at the beginning of
+  the line.
+o Some cleanup in uncomment_region code.
+
+v1.4 2001-10-03
+---------------
+o Synced with the changes brought about with
+  merging phpmode into the main distribution.
+o Added new functions as of php-4.0.5.
+   preg_replace_callback
+   array_reduce
+   imap_set_quota
+   imap_get_quota
+   array_search
+   chroot
+   udm_clear_search_limits
+   mnogosearch
+   mysql_get_client_info
+   mysql_get_server_info
+   mysql_get_proto_info
+   mysql_get_host_info
+   xslt_set_scheme_handler
+   pg_lolseek
+   pg_lotell
+   localeconv
+   strcoll
+   xslt_set_base_function
+   odbc_error
+   odbc_errormsg
+   sybase_get_last_message
+   ldap_rename
+   iconv
+   call_user_method_array
+   realpath
+o Added missing keyword
+   extends
+   as
+o Added missing function
+   get_class
+   is_bool
+   is_numeric
+   is_resource
+   is_scalar
+   printer_* ( 31 )
+   var_dump
+o Added new functions as of php-4.0.6.
+  is_callable
+  pg_last_notice
+  udm_cat_list
+  udm_cat_path
+  key_exists
+  array_map
+  array_filter
+  mysql_unbuffered_query
+o Added a php_indent_region_or_line function
+  that replaces the old indent_region
+  and is bound as default to the tab key.
+  It checks to see if there is a region marked
+  and indents either a line or the marked
+  region accordingly.
+  Thanks to Guenter Milde for the idea on how
+  to do it.
+o Finally broke down and put together a parser to extract all the function
+  names from the php documentation, now every function as of php4.0.6 should
+  be in phpmode. This somewhat doubled the number of functions in phpmode. *bliss*
+
+v2.0 2002-06-30
+---------------
+o Reworked the way indent recognizes more than one // or # comment on
+  a line.
+o Updated the function keywords for highlighting according to php-4.2.1
+
+v2.0.1 2002-08-20
+---------------
+o Made it so that when outside a phpblock phpmode doesnt insert a tab.
+
+v2.0.x xxxx-xx-xx
+---------------
+o Updated the function keywords for highlighting according to php-4.3.0 

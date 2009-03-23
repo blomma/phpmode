@@ -1,0 +1,1673 @@
+2003-02-06 Thursday 16:42  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.212), CHANGES (1.18):
+	
+	Updated the functions keywords.
+
+2002-11-17 Sunday 20:19  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/extract_fun.pl (1.3):
+	
+	Some minor fix.
+
+2002-08-20 Tuesday 02:28  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.17), php.sl (1.211), version.pl (1.11):
+	
+	Preparing to branch for 2.0.1
+
+2002-08-20 Tuesday 02:24  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.210):
+	
+	Added a fix so when outside a phpblock phpmode doesnt make a tab.
+
+2002-06-30 Sunday 23:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.16):
+	
+	Updated.
+
+2002-06-30 Sunday 20:18  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.15):
+	
+	Updated.
+
+2002-06-30 Sunday 19:04  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.209):
+	
+	Updated the functions according php version 4.2.1 .
+
+2002-03-20 Wednesday 18:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.208):
+	
+	Change the name of variable PHP_Switch_Offset to PHP_SWITCH_OFFSET.
+
+2002-03-20 Wednesday 18:39  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.207):
+	
+	Changed the name of variable PHP_Class_Offset to PHP_CLASS_OFFSET.
+
+2002-03-20 Wednesday 18:38  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.206):
+	
+	Chnaged the name of variable PHP_Colon_Offset to PHP_COLON_OFFSET.
+
+2002-03-13 Wednesday 18:50  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.205):
+	
+	Testing date
+
+2002-03-13 Wednesday 18:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.204):
+	
+	Testing date.
+
+2002-03-13 Wednesday 18:24  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.203):
+	
+	TEsting date time stamp.
+
+2002-03-06 Wednesday 21:12  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/create_ck.pl (1.2):
+	
+	Fixed the sorting of the functions.
+
+2002-03-06 Wednesday 21:04  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.202):
+	
+	Redid the function list, now it's all lowercase.
+
+2002-03-06 Wednesday 21:03  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/extract_fun.pl (1.2):
+	
+	Updated so it lowercases the functions.
+
+2002-03-06 Wednesday 18:37  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* Makefile (1.6):
+	
+	Another update to the sed thing in the makefile.
+
+2002-03-06 Wednesday 18:36  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* version.pl (1.10):
+	
+	Updated the version number.
+
+2002-03-06 Wednesday 18:36  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.201):
+	
+	Changed the version syntax in the top of the file.
+
+2002-03-06 Wednesday 18:36  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* Makefile (1.5):
+	
+	Fixed the sed function in the makefile
+
+2002-03-06 Wednesday 18:18  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.14), php.sl (1.200), doc/php_constants_keywords (1.4):
+	
+	Updated the CHANGES file, moved the return from keywords to
+	functions.
+
+2002-03-06 Wednesday 18:15  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.199):
+	
+	Updated the function list for highlighting according to php-4.1.2
+
+2002-03-06 Wednesday 18:14  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions (1.8):
+	
+	This is no longer needed.
+
+2002-03-06 Wednesday 18:14  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/create_fun.pl (1.4):
+	
+	Removed this proggie, it's been replaced by a better code.
+
+2002-03-06 Wednesday 18:13  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/extract_fun.pl (1.1):
+	
+	Added a new code program to extract the functions from the html
+	docs for php.
+
+2002-02-16 Saturday 11:27  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.13):
+	
+	Spellcheck the CHANGES file.
+
+2001-10-09 Tuesday 12:03  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.198), doc/php_constants_keywords (1.3):
+	
+	Moved the return keyword to keywords from functions.
+
+2001-10-09 Tuesday 08:52  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.197):
+	
+	Removed commented out code.
+
+2001-10-09 Tuesday 08:32  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.196):
+	
+	Made some variables global over the code, to cut down on
+	codeduplication.
+
+2001-10-09 Tuesday 08:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.195):
+	
+	Replaced the clunking looking or syntax in the if with the orelse
+	syntax, added comments about the DFA syntax.
+
+2001-10-08 Monday 11:50  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.12):
+	
+	Updated.
+
+2001-10-08 Monday 11:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.194):
+	
+	Reworked the way indent recognices more than one // or # comment on
+	a line.
+
+2001-10-08 Monday 07:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.193):
+	
+	Reverted a change, replaced a $1 with a literal PHP instead to make
+	it be recogniced by the preparse.sl when creating the DFA files.
+
+2001-10-05 Friday 15:27  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.192):
+	
+	Added a new function php_revision that displays the revision number
+	for phpmode.
+
+2001-10-05 Friday 15:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.191):
+	
+	Added a revision tag to the header of php.sl
+
+2001-10-03 Wednesday 15:05  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* shtool (1.2):
+	
+	Removed shtool from the cvs archive, dont need it included.
+
+2001-10-03 Wednesday 15:04  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* Makefile (1.4):
+	
+	Updated the path to shtool.
+
+2001-10-03 Wednesday 14:36  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* Makefile (1.3, rel-1-4):
+	
+	Removed the README file from releases.
+
+2001-10-03 Wednesday 13:43  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.11, rel-1-4):
+	
+	Updated the date of release.
+
+2001-10-03 Wednesday 13:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.10):
+	
+	Updated the CHANGELOG .
+
+2001-10-03 Wednesday 13:27  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.190), doc/php_functions (1.7) (utags: rel-1-4):
+	
+	Finaly broke down and extracted all the function names from the
+	documentation of php and updated the function list, now every
+	function should be in.
+
+2001-10-03 Wednesday 11:56  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.189):
+	
+	Fixed code formatting.
+
+2001-09-20 Thursday 09:07  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.9):
+	
+	Added entry into CHANGES about adding missing keyword as.
+
+2001-09-20 Thursday 08:04  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.8), php.sl (1.188):
+	
+	Fixed the php_indent_region_or_line so it only takes the lines
+	marked and not an extra line beneath it.
+
+2001-09-20 Thursday 07:59  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.7), php.sl (1.187):
+	
+	Added a php_indent_region_or_line that replaces the old
+	php_indent_region.
+
+2001-09-16 Sunday 16:33  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.6), php.sl (1.186), doc/php_functions (1.6):
+	
+	Added missing function var_dump
+
+2001-09-10 Monday 13:06  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* version.pl (1.9, rel-1-4):
+	
+	Bumped up the version number.
+
+2001-09-10 Monday 13:06  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.185), doc/php_constants_keywords (1.2, rel-1-4):
+	
+	Added missing as constant.
+
+2001-09-10 Monday 13:05  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* Makefile (1.2):
+	
+	Removed TODO file from dist.
+
+2001-09-04 Tuesday 12:40  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.184):
+	
+	Added missing printer functions to syntax highlight.
+
+2001-09-04 Tuesday 12:37  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.5):
+	
+	Added log about adding missing function names.
+
+2001-09-04 Tuesday 12:37  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions (1.5):
+	
+	Added missing function keywords.
+
+2001-08-07 Tuesday 06:12  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.183), doc/php_functions (1.4):
+	
+	Added missing function for syntax highlighting.
+
+2001-07-06 Friday 23:15  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.4), php.sl (1.182), doc/php_functions (1.3):
+	
+	Added missing functions.
+
+2001-06-23 Saturday 19:35  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.181):
+	
+	Added so folding is automatic on when opening php.sl
+
+2001-06-23 Saturday 15:05  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.180):
+	
+	Added new functions as of php-4.0.6
+
+2001-06-23 Saturday 15:04  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.3):
+	
+	Updated with changes.
+
+2001-06-23 Saturday 15:00  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions (1.2):
+	
+	Added new functions as of php-4.0.6
+
+2001-06-23 Saturday 14:43  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.179):
+	
+	Updated the php.sl, mostly keywords.
+
+2001-06-23 Saturday 14:42  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.2):
+	
+	Updated the CHANGES file.
+
+2001-06-23 Saturday 14:42  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/create_ck.pl (1.1, rel-1-4):
+	
+	Added a utils to create a constant list of keywords.
+
+2001-06-23 Saturday 14:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/: php_constants_keywords (1.1), php_functions (1.1),
+	php_functions.txt (1.7):
+	
+	Updated the php_functions and renamed it, also added a
+	php_constants_keywords.
+
+2001-02-23 Friday 21:22  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.178):
+	
+	Cleaned up some leftover crud since the merger into the maindist.
+	of JED.
+
+2001-02-23 Friday 21:14  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.177):
+	
+	Synced up with the release in jed, some minor changes that JED did.
+
+2001-02-09 Friday 18:26  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.176):
+	
+	Moved the Changelog and TODO list to separate files.
+
+2001-02-09 Friday 18:22  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* CHANGES (1.1):
+	
+	Moved the changelog from php.sl to it's own file.
+
+2001-02-09 Friday 18:18  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.11, rel-1-4):
+	
+	Moved the TODO list from the php.sl file to its own file.
+
+2001-02-08 Thursday 11:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.175, rel-1-3):
+	
+	Prechecking for v1.3
+
+2001-02-08 Thursday 11:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.174):
+	
+	Updated the Changelog.
+
+2001-02-08 Thursday 11:51  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.173):
+	
+	Fixed php_comment_uncomment_line, it now inserts the comment at the
+	beginning of the line.
+
+2001-02-08 Thursday 11:46  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.172):
+	
+	Made php_uncomment_region a bit more generic.
+
+2001-02-08 Thursday 11:30  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.171):
+	
+	Replaced the php_comment_region function with a superior one.
+
+2001-02-05 Monday 13:05  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.170):
+	
+	Minor code beutification.
+
+2001-02-03 Saturday 13:57  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.169):
+	
+	More work on the docs, and added to the TODO list.
+
+2001-01-29 Monday 11:38  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* version.pl (1.8, rel-1-3):
+	
+	Updated the version number.
+
+2001-01-29 Monday 11:37  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.168):
+	
+	Added a Variable called PHP_KET_NEWLINE to control the insertion of
+	}.
+
+2001-01-28 Sunday 22:16  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.167):
+	
+	Updated the Changelog
+
+2001-01-28 Sunday 22:14  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.166):
+	
+	More fixes to the keyword list.
+
+2001-01-28 Sunday 21:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.165):
+	
+	Updated the changelog.
+
+2001-01-28 Sunday 21:46  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions.txt (1.6, rel-1-3):
+	
+	Updated the keywords.
+
+2001-01-28 Sunday 21:46  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.164):
+	
+	Fixed the keywords.
+
+2001-01-27 Saturday 15:11  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.163):
+	
+	Updated DFA syntax and removed a line from syntax_table regarding
+	<> characters.
+
+2001-01-27 Saturday 14:49  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.162):
+	
+	Updated the DFA syntax.
+
+2001-01-27 Saturday 14:34  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/: create_fun.pl (1.3), trim.pl (1.3) (utags: rel-1-3,
+	rel-1-4):
+	
+	Both now take their input from cating into the program.
+
+2001-01-13 Saturday 18:50  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.161):
+	
+	Updated the DFA syntax.
+
+2001-01-13 Saturday 18:45  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.160):
+	
+	Replaced all ocuurances of "PHP" against $1 to make it more
+	consistent.
+
+2001-01-13 Saturday 18:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.159):
+	
+	Cleaned up some code.
+
+2001-01-13 Saturday 18:34  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.158):
+	
+	Updated Changelog.
+
+2001-01-13 Saturday 18:33  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* README (1.2, rel-1-4, rel-1-3):
+	
+	Fixed a spelling error.
+
+2001-01-13 Saturday 18:32  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* byte_compile (1.2):
+	
+	Removed byte_compile.
+
+2001-01-13 Saturday 18:32  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* testcases/: 2.php (1.4), 404.php (1.5), brace.php (1.3),
+	class.template.inc (1.1), comment.php (1.3), contact.php (1.3),
+	ex.php (1.5), functions.php (1.5), if.php (1.3), postgres.php
+	(1.4), start.php (1.3) (utags: rel-1-3, rel-1-4):
+	
+	Added testcases.
+
+2001-01-13 Saturday 18:31  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* README (1.1):
+	
+	Added a README file.
+
+2001-01-13 Saturday 05:23  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.157):
+	
+	Forgot to change the date in the changelog before the release.
+
+2001-01-13 Saturday 04:56  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.156, rel-1-2):
+	
+	Prechecking for v1.2
+
+2001-01-13 Saturday 04:51  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.155):
+	
+	Reversed the Variable renaming, dont need the grief.
+
+2001-01-12 Friday 09:13  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.154):
+	
+	Added separators to the menu to increase readability.
+
+2001-01-09 Tuesday 06:01  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.153):
+	
+	Added back DFA syntax caching to on by default.
+
+2001-01-09 Tuesday 05:55  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.152):
+	
+	Spellchecked.
+
+2001-01-09 Tuesday 05:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.151):
+	
+	Made php_mark_matching more generic, now it matches whatever youre
+	standing on.
+
+2001-01-01 Monday 22:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.150):
+	
+	Removed some unused code parts.
+
+2001-01-01 Monday 13:13  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.149):
+	
+	Dooh stoopid stoopid, undid my *FIX* of PHP_Switch_Offset, it did
+	work as it should, i just didnt understood it.
+
+2001-01-01 Monday 13:03  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.148):
+	
+	Renamed some custom variables to better fit in, also fixed a bug
+	with PHP_Switch_Offset, or so i at least think.
+
+2001-01-01 Monday 12:22  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.147):
+	
+	Ported C_Switch_Offset over from cmode to this mode and renamed it
+	to PHP_Switch_Offset, it controls the offset of code inside a
+	switch statement.
+
+2000-12-31 Sunday 06:55  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.146):
+	
+	Fixed some spellerrors.
+
+2000-12-31 Sunday 06:51  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.145):
+	
+	Removed the old outcommented behavior for code outside a phpblock.
+
+2000-12-31 Sunday 06:49  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.144):
+	
+	Updated the docs.
+
+2000-12-31 Sunday 06:48  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.143):
+	
+	Formatted the sourcecode.
+
+2000-12-31 Sunday 06:42  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.142):
+	
+	Removed an extra php_paragraph_sep function.
+
+2000-12-26 Tuesday 15:17  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* version.pl (1.7, rel-1-2):
+	
+	Updated the version number.
+
+2000-12-21 Thursday 07:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.141):
+	
+	Updated the functions list for syntax highligthing.
+
+2000-12-21 Thursday 01:21  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions.txt (1.5, rel-1-2):
+	
+	Updated the list of functions.
+
+2000-12-04 Monday 10:08  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.140, rel-1-1):
+	
+	Stamped 1.1 version
+
+2000-11-23 Thursday 14:53  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.139):
+	
+	Updated the docs and fixed some spelling mistakes.
+
+2000-11-23 Thursday 14:50  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.138):
+	
+	Reorganized the docs.
+
+2000-11-23 Thursday 14:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.137):
+	
+	Fixed some spelling mistakes.
+
+2000-11-13 Monday 19:34  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* version.pl (1.6, rel-1-1):
+	
+	Bumped up the version.
+
+2000-11-13 Monday 19:33  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.136):
+	
+	The region_commenting code now doesnt comment out an extra line at
+	the bottom of the marked region, also fixed a spelling error.
+
+2000-11-13 Monday 11:51  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.135):
+	
+	Fixed the comment/uncomment region code, it no longers movs the
+	commented region to the beginning of the line.
+
+2000-11-04 Saturday 13:02  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.134, rel-1-0):
+	
+	Updated the changelog date.
+
+2000-11-04 Saturday 11:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.133):
+	
+	Updated folding, it now uses //{{{ and //}}} as start and end
+	markers.
+
+2000-11-02 Thursday 06:48  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* .cvsignore (1.2, rel-1-4, rel-1-3, rel-1-2, rel-1-1, rel-1-0):
+	
+	Added entries
+
+2000-11-02 Thursday 06:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* testcases/: 2.php (1.3), 404.php (1.4), brace.php (1.2),
+	comment.php (1.2), contact.php (1.2), ex.php (1.4), functions.php
+	(1.4), if.php (1.2), postgres.php (1.3), start.php (1.2):
+	
+	Removed old testcases
+
+2000-11-02 Thursday 06:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions.txt (1.4, rel-1-1, rel-1-0):
+	
+	Updated the function list.
+
+2000-11-02 Thursday 06:38  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.132):
+	
+	Update the Changelog
+
+2000-11-02 Thursday 06:37  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.131):
+	
+	Added missing functions.
+
+2000-11-02 Thursday 06:31  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.130):
+	
+	Updated the Changelog.
+
+2000-11-02 Thursday 06:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.129):
+	
+	Added missing constants
+
+2000-11-02 Thursday 06:22  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.128):
+	
+	Added more info to DFA docs.
+
+2000-11-02 Thursday 06:16  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.127):
+	
+	Updated the docs, added a section of DFA syntax
+
+2000-11-02 Thursday 05:45  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.126):
+	
+	Fixed the regexp in DFA so oneliners like '<% echo ("As of PHP
+	3.0.4 you may optionally use ASP-style tags"); %>' now looks nicer.
+
+2000-11-02 Thursday 05:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.125):
+	
+	Added ASP style tags, aka '<% %>', to be recogniced as php
+	delimiters.
+
+2000-11-02 Thursday 05:08  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.124):
+	
+	Fixed some problems with # style comments, they should now works as
+	// comments.
+
+2000-11-02 Thursday 04:34  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.123):
+	
+	Updated the docs on html syntax comments.
+
+2000-11-02 Thursday 04:30  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.122):
+	
+	Fixed the syntax highlighting of html comments, it only works in
+	DFA syntax and i updated that to conform more to the specs.
+
+2000-11-01 Wednesday 18:22  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.121), version.pl (1.5, rel-1-0):
+	
+	Update the version info.
+
+2000-11-01 Wednesday 18:20  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.120):
+	
+	Fixed the php_mark_function code so it no longer marks extra lines
+	above and under the actual function.
+
+2000-11-01 Wednesday 17:28  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.119):
+	
+	Added html style comments to be recogniced and colored according.
+
+2000-11-01 Wednesday 02:44  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.118, rel-0-9):
+	
+	Update the date info, pre relase work
+
+2000-10-15 Sunday 21:58  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.117):
+	
+	Update the TODO list
+
+2000-10-15 Sunday 21:46  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.116):
+	
+	Added so that end tags ?> and start tags <? are colored as
+	preprocesor lines, but only works in DFA mode.
+
+2000-10-15 Sunday 21:32  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.115):
+	
+	Updated the docs somewhat and spellchecked them
+
+2000-10-15 Sunday 21:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.114):
+	
+	Update the docs
+
+2000-10-15 Sunday 21:17  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.113):
+	
+	Updated the docs
+
+2000-10-13 Friday 00:08  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.112):
+	
+	Redid the php_top_of_function, it now has a more strict check for
+	finding a function top.
+
+2000-10-12 Thursday 21:08  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.111):
+	
+	Reworked the php_indent_buffer, should work better now.
+
+2000-10-12 Thursday 20:02  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.110):
+	
+	Fixed some spelling errors
+
+2000-10-12 Thursday 19:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.109):
+	
+	Update the docs
+
+2000-10-12 Thursday 19:44  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.108), version.pl (1.4, rel-0-9):
+	
+	Updated the version tag
+
+2000-10-12 Thursday 19:38  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.107):
+	
+	Updated the info about setting set_highlight_cache_dir.
+
+2000-10-12 Thursday 18:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.106):
+	
+	Updated DFA mode
+
+2000-10-12 Thursday 14:05  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.105), version.pl (1.3), doc/php_functions.txt (1.3,
+	rel-0-9):
+	
+	Updated DFA highlighting syntax.
+
+2000-10-12 Thursday 12:44  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.104):
+	
+	Added new functions from php-4.0.3
+
+2000-10-11 Wednesday 01:32  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.103, rel-0-8):
+	
+	Pre-release 0.8 commit
+
+2000-10-11 Wednesday 01:27  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.102):
+	
+	Improved the heuristic of php_top_of_function to not find functions
+	that are in a comment.
+
+2000-10-11 Wednesday 00:55  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.101):
+	
+	Replaced the php_indent_buffer code with the one from krconv.sl,
+	works nicer.
+
+2000-10-10 Tuesday 23:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.100):
+	
+	Update the todo list
+
+2000-10-10 Tuesday 23:21  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.99):
+	
+	Spellchecked new stuff
+
+2000-10-10 Tuesday 23:20  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.98):
+	
+	Changed the heuristic of finding if youre inside a phpblock
+
+2000-10-10 Tuesday 22:01  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.97):
+	
+	Changed the behavior of indenting outside phpblocks, added a
+	function to insert a literal TAB
+
+2000-10-10 Tuesday 20:37  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.96), testcases/functions.php (1.3, rel-0-9, rel-0-8):
+	
+	Modified the todo list
+
+2000-10-07 Saturday 02:20  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.95):
+	
+	Changed the error message if php_top_of_function can't find the top
+	brace to tell the user what the errror is, namely that it cant find
+	the top brace.
+
+2000-10-07 Saturday 02:16  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.94):
+	
+	Changed the beavhior of php_top_of_function, now it correctly
+	reports that youre not in a function if youre missing a top brace
+	of the function.
+
+2000-10-07 Saturday 01:56  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.93):
+	
+	Fixed the docs on the keybindings
+
+2000-10-07 Saturday 01:50  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.92), version.pl (1.2, rel-0-8), testcases/ex.php (1.3,
+	rel-0-9, rel-0-8), testcases/functions.php (1.2):
+	
+	Added php_mark_matching, restructured the order of keybindings on
+	the menu and keybindings.
+
+2000-10-06 Friday 23:51  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.91):
+	
+	Added back missing keydefine for php_format_paragraph, made more
+	frequent use of $1 instead of using "PHP" everuwhere, easier to
+	change later on.
+
+2000-10-06 Friday 23:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.90):
+	
+	Swaped email address, added missing release date to version 0.7
+
+2000-10-06 Friday 23:41  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.89):
+	
+	Fixed the folding information and added folding to some new
+	functions
+
+2000-10-05 Thursday 15:06  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.88):
+	
+	Updated the docs.
+
+2000-10-05 Thursday 14:58  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* byte_compile (1.1, rel-1-2, rel-1-1, rel-1-0, rel-0-9, rel-0-8):
+	
+	Added a file to byte compile php.sl
+
+2000-10-05 Thursday 14:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.87):
+	
+	Spellcheck my text and removed some debugging lines
+
+2000-10-05 Thursday 13:57  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.86):
+	
+	Fixed a misspelling
+
+2000-10-05 Thursday 13:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.85):
+	
+	Added back format_paragprah function
+
+2000-10-05 Thursday 12:44  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/create_fun.pl (1.2, rel-1-2, rel-1-1, rel-1-0, rel-0-9,
+	rel-0-8):
+	
+	Fixed some output errors
+
+2000-10-05 Thursday 12:43  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.84):
+	
+	Added missing keywords
+
+2000-10-05 Thursday 12:26  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* utils/: create_fun.pl (1.1), sort.pl (1.2), trim.pl (1.2,
+	rel-1-2, rel-1-1, rel-1-0, rel-0-9, rel-0-8):
+	
+	Renamed sort, and modified it to not print out uppercase also
+
+2000-10-05 Thursday 12:20  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions.txt (1.2, rel-0-8):
+	
+	Updated the list with more functions
+
+2000-10-05 Thursday 12:01  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* .cvsignore (1.1, rel-0-9, rel-0-8), php.sl (1.83),
+	testcases/404.php (1.3, rel-0-9, rel-0-8), testcases/ex.php (1.2),
+	testcases/postgres.php (1.2, rel-0-9, rel-0-8):
+	
+	Added some more docs and changes, also removed some debugging
+	messages
+
+2000-10-05 Thursday 11:42  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.82), testcases/404.php (1.2):
+	
+	Added more docs to the file about installing and user variables,
+	also updated a testfile
+
+2000-10-05 Thursday 09:28  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* Makefile (1.1, rel-1-3, rel-1-2, rel-1-1, rel-1-0, rel-0-9,
+	rel-0-8), php.sl (1.81), shtool (1.1, rel-1-4, rel-1-3, rel-1-2,
+	rel-1-1, rel-1-0, rel-0-9, rel-0-8), version.pl (1.1),
+	testcases/2.php (1.2, rel-0-9, rel-0-8):
+	
+	Added some build files and also updated the install docs in php.sl
+
+2000-08-25 Friday 12:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.80):
+	
+	Added release date
+
+2000-08-15 Tuesday 18:27  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* doc/php_functions.txt (1.1):
+	
+	Added file
+
+2000-08-15 Tuesday 18:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* testcases/2.php (1.1), testcases/404.php (1.1),
+	testcases/brace.php (1.1, rel-0-9, rel-0-8), testcases/comment.php
+	(1.1, rel-0-9, rel-0-8), testcases/contact.php (1.1, rel-0-9,
+	rel-0-8), testcases/ex.php (1.1), testcases/functions.php (1.1),
+	testcases/if.php (1.1, rel-0-9, rel-0-8), testcases/postgres.php
+	(1.1), testcases/start.php (1.1, rel-0-9, rel-0-8), utils/sort.pl
+	(1.1), utils/trim.pl (1.1):
+	
+	Added files
+
+2000-07-19 Wednesday 14:33  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.79):
+	
+	Added another item to the todo list
+
+2000-07-19 Wednesday 00:00  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.78):
+	
+	Added to the todolist, removed keybinding to php_format_paragraph
+
+2000-07-18 Tuesday 18:13  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.77):
+	
+	Updated the todo list
+
+2000-07-18 Tuesday 18:10  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.10), php.sl (1.76):
+	
+	Removed the TODO file and minor layout fixes in php.sl
+
+2000-07-18 Tuesday 17:26  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.75):
+	
+	Updated the todolist
+
+2000-07-18 Tuesday 17:20  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.74):
+	
+	Fixed a typo in Abraham vd Merwe name, and updated the thank you
+	list
+
+2000-07-18 Tuesday 16:48  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.73):
+	
+	Maybe a fix for when the mode screws up text outside the phpblock
+	and consec. screws up indenting inside the phpblock.
+
+2000-06-30 Friday 07:02  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.72):
+	
+	Merged in new function keywords from the 4.01 release of php
+
+2000-06-24 Saturday 18:23  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.71):
+	
+	Added print_r and var_dump to the keywords
+
+2000-06-14 Wednesday 20:56  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.70):
+	
+	updated todo list
+
+2000-06-14 Wednesday 20:40  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.69):
+	
+	Blaah
+
+2000-06-02 Friday 05:34  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.68):
+	
+	More work on the engine, tricky tricky.
+
+2000-06-01 Thursday 02:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.67):
+	
+	Added folding to a function
+
+2000-06-01 Thursday 02:42  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.66):
+	
+	Updated the docs and changelog
+
+2000-06-01 Thursday 02:35  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.65):
+	
+	Okay fixed the problem with PHP_BRACE not being recogniced outside
+	of braces, only inside them, some cleanup in the indenting engine.
+
+2000-05-31 Wednesday 23:57  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.64):
+	
+	Updated the thanks to list
+
+2000-05-30 Tuesday 15:01  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.63):
+	
+	Updated the docs with the new variables
+
+2000-05-30 Tuesday 14:46  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.62):
+	
+	Added default values for some variables
+
+2000-05-30 Tuesday 13:58  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.61):
+	
+	Phpmode now recognices # as a comment
+
+2000-05-30 Tuesday 13:50  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.60):
+	
+	Renamed to run_mode_hooks, also integrated functionality from cmode
+	into php mode, namely to be able to turn off a new comment line
+	after a comment line
+
+2000-05-30 Tuesday 09:13  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.59, rel-0-5):
+	
+	Added back the long keywords
+
+2000-05-22 Monday 20:33  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.58):
+	
+	Updated the header with information.
+
+2000-05-22 Monday 20:28  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.57):
+	
+	Fixed indenting of if (something)		       something
+	Also added a missing keyword default.  Also cleaned up
+	switch...case statements, they should now indent properly.
+
+2000-05-22 Monday 17:02  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.56):
+	
+	Added a non-issue log for things that cant be done right now due to
+	design decisions or limitations in the editor.
+
+2000-05-22 Monday 15:59  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.55):
+	
+	Updated the TOOO list
+
+2000-05-22 Monday 15:44  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.54):
+	
+	Updated the changelog
+
+2000-05-22 Monday 15:38  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.53):
+	
+	Added two missing keywords, global and globals
+
+2000-05-22 Monday 15:11  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.52):
+	
+	Allright, changed so the keywords aren't case sensitive anymore,
+	since php in php only variables are casesesitive and some
+	constants.
+
+2000-05-22 Monday 14:08  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.51):
+	
+	Updated the changelog.
+
+2000-05-22 Monday 13:23  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.50):
+	
+	Swapped the colors bewteen keyword1 and keyword to be more in line
+	with the rest of the modes.
+
+2000-05-21 Sunday 19:17  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.49):
+	
+	Removed php_comment_column, it wasnt used.
+
+2000-05-21 Sunday 19:11  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.48):
+	
+	Made the header comments more readable.
+
+2000-05-21 Sunday 18:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.47):
+	
+	Added php_insert_function and php_insert_class to menu and added
+	keybindings for them, also fixed php_insert_class to have the name
+	class instead of function when asking for the name of the class.
+
+2000-05-21 Sunday 18:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.46):
+	
+	Now php_insert_class function doesnt try to move to matching )
+
+2000-05-21 Sunday 18:27  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.45):
+	
+	Added a missing keyword, class.  Added two new functions,
+	php_insert_function and php_insert_class.
+
+2000-05-21 Sunday 17:48  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.44):
+	
+	Moved the todo list into the top header of the file, easier to
+	maintain that way.
+
+2000-05-21 Sunday 17:44  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.43):
+	
+	Simplified the php_is_comment function.
+
+2000-05-21 Sunday 17:40  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.9, rel-0-5), php.sl (1.42):
+	
+	php_is comment_example is now named php_is_comment
+
+2000-05-21 Sunday 17:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.8), php.sl (1.41):
+	
+	Fixed php_mark_function, now it marks the entire function
+	regardless of multiple braces inside it.
+
+2000-05-21 Sunday 17:23  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.7), php.sl (1.40):
+	
+	Fixed php_top_of_function, it now truly functions, and sees if it
+	is out of a function.
+
+2000-05-21 Sunday 15:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.39):
+	
+	Fixed the php_in_block function, now it correctly reads past a <?
+	in a comment, also fixed so php_in_comment_example now recognice //
+	as a comment
+
+2000-05-21 Sunday 13:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.38):
+	
+	Simplified the indent_buffer function.
+
+2000-05-20 Saturday 21:35  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.37):
+	
+	Removed a debugging string.
+
+2000-05-20 Saturday 21:31  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.36):
+	
+	Refxed the // problem again, this is a keeper i hope.
+
+2000-05-20 Saturday 20:59  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.35):
+	
+	Removed superflous function continued_statement.
+
+2000-05-20 Saturday 20:53  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.34):
+	
+	Removed a wayward debugging message.
+
+2000-05-20 Saturday 20:51  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.6), php.sl (1.33):
+	
+	Fixed the problem of having multiple // on one line and the
+	indenting was screwed up.
+
+2000-05-20 Saturday 19:35  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.32):
+	
+	Fixed the indent_region, now it doesnt matter if you start a region
+	from bottom-to-up or vice versa, it gets it right.
+
+2000-05-20 Saturday 19:13  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.31):
+	
+	Added keybindings to indent_region and indent_buffer
+
+2000-05-20 Saturday 18:57  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.30):
+	
+	Minor changes to php_in_block function
+
+2000-05-20 Saturday 18:23  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.29):
+	
+	Added menuentrys for indent_buffer and indent_region
+
+2000-05-20 Saturday 18:21  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.28):
+	
+	Added a indent_buffer function
+
+2000-05-20 Saturday 18:02  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.27):
+	
+	Added a function to indent a marked region.
+
+2000-05-20 Saturday 16:24  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.26, rel-0-4):
+	
+	Added instructions for bytecompiling the file
+
+2000-05-20 Saturday 16:19  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.25):
+	
+	Added better install instructions
+
+2000-05-20 Saturday 15:56  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.24):
+	
+	Updated the keyword list, now contains all php3 and php4 keywords. 
+	Also updated the syntax table with the operators for php
+
+2000-05-20 Saturday 12:38  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.23):
+	
+	Added a menu to the menubar with functions
+
+2000-05-20 Saturday 12:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.22):
+	
+	Rewrote all define_keywords to not use strncat
+
+2000-05-20 Saturday 12:00  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.21):
+	
+	Updated the docs for the mode, now the functions and keybindings
+	are more clearly defined.
+
+2000-05-20 Saturday 11:05  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.20):
+	
+	Dooh removed it, realized that folding isnt supported under 16 jed
+
+2000-05-20 Saturday 11:04  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.19):
+	
+	Added info at top so it enters folding mode at startup
+
+2000-05-10 Wednesday 07:54  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.18):
+	
+	Added folding info into the file
+
+2000-05-09 Tuesday 01:39  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.17, rel-0-3-1-1):
+	
+	In prep for tagging
+
+2000-05-09 Tuesday 01:38  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.16):
+	
+	Removed the debugging messages from the mode
+
+2000-05-08 Monday 13:08  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.15):
+	
+	Fixed minor char
+
+2000-05-08 Monday 13:06  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.5, rel-0-4, rel-0-3-1-1), php.sl (1.14) (utags:
+	rel-0-3-1):
+	
+	Backported // fix, it didnt work as expected
+
+2000-05-08 Monday 11:00  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.13, rel-0-3):
+	
+	In prep for a new version
+
+2000-05-08 Monday 10:52  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.12):
+	
+	Removed misc crud from the code, rewrote some of the html indeting
+	code
+
+2000-05-08 Monday 03:58  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.4, rel-0-3), php.sl (1.11):
+	
+	Fixed the bug where indenting would misbehave after you had a
+	sometext and then a <?
+
+2000-05-08 Monday 00:01  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.10):
+	
+	Fixed the php_mark_function, it nows works correctly whetever the {
+	is on a line by itself or if it is on the same line as the function
+	start
+
+2000-05-07 Sunday 23:39  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.9):
+	
+	Fixed a buf in define key for php_comment_line, it pointed to a
+	obsolete function
+
+2000-05-07 Sunday 23:25  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.3), php.sl (1.8):
+	
+	Fixed the // indenting, now it works with multiple // on the same
+	line
+
+2000-05-07 Sunday 07:57  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.7, rel-0-2):
+	
+	Bumped up the version number, addded some comments to the top of
+	the script
+
+2000-05-07 Sunday 07:29  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.2, rel-0-2), php.sl (1.6):
+	
+	Fixed the bug if you have something like http:// in a // comment it
+	would line it up wrong
+
+2000-05-07 Sunday 06:52  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.5):
+	
+	Fixed the top_of_funtion
+
+2000-05-07 Sunday 06:01  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* TODO (1.1), php.sl (1.4):
+	
+	Added TODO file, fixed a bug in the indenting function, also fixed
+	the newline_and_indent function
+
+2000-05-07 Sunday 03:52  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.3):
+	
+	Fixed the comment_region and uncomment_region functions, they now
+	work
+
+2000-05-07 Sunday 02:47  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.2):
+	
+	Changed php_comment_line, it nows correctly comments a line
+
+2000-05-07 Sunday 01:57  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.1):
+	
+	Initial revision
+
+2000-05-07 Sunday 01:57  Mikael hultgren <mikael_hultgren@gmx.net>
+
+	* php.sl (1.1.1.1, start):
+	
+	Imported sources
+

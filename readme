@@ -1,0 +1,6 @@
+This is a mode to help in editing php files in jed.
+
+You can find installations instructions in the top of
+php.sl.
+Don't forget to read the Changelog in the top of php.sl
+to see what has changed since the last release.
